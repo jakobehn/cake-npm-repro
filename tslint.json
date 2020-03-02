@@ -1,0 +1,21 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["*.json", "**/*.json"] // do not try to lint JSON files
+  },
+  "rules": {
+    "jsx-boolean-value": ["error", "never"],
+    "jsx-no-multiline-js": ["error", "never"],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "member-access": false,
+    "jsx-no-lambda": false,
+    "quotemark": [true, "double", "jsx-double"],
+    "no-namespace": false, // This is how we generate typings from C#
+    "interface-name": false, // This is how we generate typings from C#
+    "no-internal-module": false, // This is how we generate typings from C#
+    "no-bitwise": false,
+    "member-ordering": false,
+    "no-empty-interface": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        // Target latest version of ECMAScript.
+        "target": "es5",
+        // Search under node_modules for non-relative imports.
+        "moduleResolution": "node",
+        // Process & infer types from .js files.
+        "allowJs": false,
+        // Enable strictest settings like strictNullChecks & noImplicitAny.
+        "strict": true,
+        // Disallow features that require cross-file information for emit.
+        "isolatedModules": false,
+        // Import non-ES modules as default imports.
+        "esModuleInterop": true,
+        // enable source map so we can debug TS files
+        "sourceMap": true,
+        "resolveJsonModule": true, // load i18n json translations
+        "lib": [
+            "dom",
+            "es2018"
+        ],
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@linx/*": [
+                "./src/*"
+            ]
+        },
+        "typeRoots": [
+            "node_modules/@types",
+            "src/custom-types"
+        ],
+        "outDir": "./dist",
+        "skipLibCheck": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
